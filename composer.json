@@ -1,5 +1,5 @@
 {
-    "name": "symfony/dependency-injection",
+    "name": "postyou/dependency-injection",
     "type": "library",
     "description": "Allows you to standardize and centralize the way objects are constructed in your application",
     "keywords": [],
