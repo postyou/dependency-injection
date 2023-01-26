@@ -624,7 +624,7 @@ class XmlFileLoader extends FileLoader
             $parts = explode('/', $location);
             $locationstart = 'file:///';
             if (0 === stripos($location, 'phar://')) {
-                $tmpfile = tempnam(file_get_content(__DIR__ . "/../../../../temp_path.txt"), 'symfony');
+                $tmpfile = tempnam(file_get_contents(__DIR__ . "/../../../../temp_path.txt"), 'symfony');
                 if ($tmpfile) {
                     copy($location, $tmpfile);
                     $tmpfiles[] = $tmpfile;
@@ -681,7 +681,7 @@ EOF
             $dom = new \DOMDocument();
             $dom->loadXML('<?xml version="1.0"?><test/>');
 
-            $tmpfile = tempnam(file_get_content(__DIR__ . "/../../../../temp_path.txt"), 'symfony');
+            $tmpfile = tempnam(file_get_contents(__DIR__ . "/../../../../temp_path.txt"), 'symfony');
             register_shutdown_function(static function () use ($tmpfile) {
                 @unlink($tmpfile);
             });
