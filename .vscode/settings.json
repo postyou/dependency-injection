@@ -1,0 +1,8 @@
+{
+    "workbench.colorCustomizations": {
+        "gitDecoration.modifiedResourceForeground": "#21e6a4",
+        "activityBar.background": "#412629",
+        "titleBar.activeBackground": "#5B353A",
+        "titleBar.activeForeground": "#FCF9FA"
+    }
+}
