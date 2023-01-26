@@ -54,6 +54,6 @@
     },
     "replace": {
         "symfony/dependency-injection": "5.4.19"
-    }
+    },
     "minimum-stability": "dev"
 }
